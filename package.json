@@ -1,0 +1,29 @@
+{
+    "name": "qacart-courses-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "run-p server client",
+        "server": "node server.js",
+        "client": "node client.js",
+        "cy:run": "cypress run --record --key af178082-5bfe-4659-bb37-d17a1425209b"
+    },
+    "author": "Hatem Hatamleh",
+    "license": "ISC",
+    "dependencies": {
+        "basic-auth": "^1.1.0",
+        "cypress": "^7.3.0",
+        "express-jwt": "^5.1.0",
+        "json-server": "^0.9.1",
+        "jsonwebtoken": "^7.1.9"
+    },
+    "standard": {
+        "env": [
+            "node"
+        ]
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.0.1"
+    }
+}
